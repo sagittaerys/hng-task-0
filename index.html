@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header class="profile-header">
+        <figure class="profile-avatar">
+          <img
+            src="Olamilekan.jpg"
+            alt="Profile picture of Olamilekan"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <div class="profile-info">
+          <h1 data-testid="test-user-name">Olamilekan J. Aremu</h1>
+
+          <p data-testid="test-user-bio">
+            <div>
+
+              <p>You know my name, not my story. So here's a pinch of it.</p>
+  
+              <p>
+                I'm a full-stack engineer with strong leanings toward front end
+                devepoment. I love writing code because it's the closest thing
+                that we have to magical runes in the modern world [I'm a
+                mythological geek so......] and this feeling of making it all
+                click is kinda addictive tbh.
+              </p>
+  
+              <p>
+                When I'm not coding, you'll find me lost in a good book, exploring
+                historical or mythological cannons.
+              </p>
+  
+              <p>
+                I believe in continuous learning and growth, both personally and
+                professionally.
+              </p>
+  
+              <p>P.S - I make a mean jollof rice fr 😂.</p>
+            </div>
+          </p>
+
+          <!-- time in milliseconds -->
+          <p class="current-time">
+            Current Time: <span data-testid="test-user-time"></span> ms
+          </p>
+
+        </div>
+      </header>
+
+      <!-- my social links -->
+      <nav data-testid="test-user-social-links" class="social-links">
+        <h2>Connect With Me</h2>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/sagittaerys"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+            >
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/olamilekan-aremu-a15651236/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/sagittaric?s=21"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+            >
+              Twitter
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--hobbies and dislikes  -->
+      <section class="hobbies">
+        <h2>My Hobbies</h2>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Reading</li>
+          <li>Mythology & History</li>
+          <li>Gaming</li>
+          <li>Music</li>
+          <li>Anime</li>
+          <li>Food</li>
+        </ul>
+      </section>
+
+      <section class="dislikes">
+        <h2>My Dislikes</h2>
+        <ul data-testid="test-user-dislikes">
+          <li>Bugs!</li>
+          <li>Noise!</li>
+          <li>Hypocrites!</li>
+          <li>Bullies!</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
