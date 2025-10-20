@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/fd48fce564.js" crossorigin="anonymous"></script>
+  <title>Contact</title>
+</head>
+<body>
+  <div class="omni-overlay">
+    <!-- routing buttons -->
+      <div id="button-group">
+            <a href="index.html">
+              <button>
+                Home 
+              </button>
+            </a>
+            <a href="about.html">
+
+              <button>
+                About 
+              </button>
+            </a>
+          </div>
+
+
+    <!-- form -->
+    <div class="container">
+        <h1 id="page-marker">Contact</h1>
+
+        <!-- success message here -->
+        <div data-testid="test-contact-success" class="success-message" role="alert" aria-live="polite">
+            Thank you for your message! I'll get back to you soon.
+        </div>
+
+        <!-- form -->
+        <form id="contactForm" novalidate>
+
+            <!-- name -->
+            <div class="form-group">
+                <label for="fullName">
+                    Full Name <span class="required" aria-label="required">*</span>
+                </label>
+                <input 
+                    type="text" 
+                    id="fullName" 
+                    name="fullName"
+                    data-testid="test-contact-name"
+                    required
+                    aria-required="true"
+                    aria-describedby="nameError"
+                >
+                <div 
+                    id="nameError" 
+                    class="error-message" 
+                    data-testid="test-contact-error-name"
+                    role="alert"
+                ></div>
+            </div>
+
+            <!-- email -->
+            <div class="form-group">
+                <label for="email">
+                    Email <span class="required" aria-label="required">*</span>
+                </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    data-testid="test-contact-email"
+                    required
+                    aria-required="true"
+                    aria-describedby="emailError"
+                >
+                <div 
+                    id="emailError" 
+                    class="error-message" 
+                    data-testid="test-contact-error-email"
+                    role="alert"
+                ></div>
+            </div>
+
+            <!-- subject -->
+            <div class="form-group">
+                <label for="subject">
+                    Subject <span class="required" aria-label="required">*</span>
+                </label>
+                <input 
+                    type="text" 
+                    id="subject" 
+                    name="subject"
+                    data-testid="test-contact-subject"
+                    required
+                    aria-required="true"
+                    aria-describedby="subjectError"
+                >
+                <div 
+                    id="subjectError" 
+                    class="error-message" 
+                    data-testid="test-contact-error-subject"
+                    role="alert"
+                ></div>
+            </div>
+
+            <!-- message -->
+            <div class="form-group">
+                <label for="message">
+                    Message <span class="required" aria-label="required">*</span>
+                </label>
+                <textarea 
+                    id="message" 
+                    name="message"
+                    data-testid="test-contact-message"
+                    required
+                    aria-required="true"
+                    aria-describedby="messageError"
+                    placeholder="Please write at least 10 characters..."
+                ></textarea>
+                <div 
+                    id="messageError" 
+                    class="error-message" 
+                    data-testid="test-contact-error-message"
+                    role="alert"
+                ></div>
+            </div>
+
+            <!-- submit utton -->
+            <button 
+                type="submit" 
+                data-testid="test-contact-submit"
+            >
+                Send Message
+            </button>
+        </form>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
